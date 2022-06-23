@@ -187,14 +187,14 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str +"!";
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var saludo = "hola ";
-  return saludo + nombre + apellido;
+  return `${nombre} ${apellido}`;
   
 }
 
@@ -202,7 +202,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+  return "Hola "+ nombre +"!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -234,10 +234,10 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var x = 1;
+  var valoreuro = 1;
   var dolar = 1.20;
-  var cantidad = euro;
-  var cambio = euro * 1.20 / 1;
+  var x = euro;
+  var cambio = (x * dolar) / valoreuro;
   return cambio;
 }
 
